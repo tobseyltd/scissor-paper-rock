@@ -1,6 +1,6 @@
 # Paper, Scissors, Rock
 
-> LIVE VERSION: https://rawg-clone-react.vercel.app/
+> LIVE VERSION: https://superb-taffy-55adbf.netlify.app/
 
 ## Table of contents
 
