@@ -36,7 +36,7 @@ function App() {
             {gameElements.map((element) => (
               <div
                 key={element.id}
-                className="mr-10 mb-8 ml-10"
+                className='pb-6 w-5/12 text-center md:p-8'
                 onClick={() => {
                   setUserPick(element.id);
                 }}
@@ -67,11 +67,14 @@ const GameContainer = tw.div`
   flex 
   flex-wrap 
   justify-center
+  overflow-visible
   mt-12 
-  md:w-4/12 
-  w-4/6
+  md:w-5/12 
+
+  w-6/6
   bg-[url('../src/assets/bg-triangle.svg')]
   bg-center
   bg-no-repeat
+  md:bg-auto
   bg-contain
 `;

@@ -38,7 +38,7 @@ const Result = ({ userPick, resetUserPick, updateScore }: Props) => {
 
   return (
     <ResultContainer>
-      <div className="pointer-events-none">
+      <div className='flex flex-wrap justify-center mr-4 w-4/12 pointer-events-none'>
         <p className='mb-12 text-center text-white'>YOU PICKED</p>
         {returnUserPick(userPick)}
       </div>
@@ -61,7 +61,7 @@ const Result = ({ userPick, resetUserPick, updateScore }: Props) => {
         </button>
       </div>
 
-      <div className="pointer-events-none">
+      <div className='flex flex-wrap justify-center ml-4 w-4/12 pointer-events-none'>
         <p className='mb-12 text-center text-white'>THE HOUSE PICKED</p>
         {returnHousePick(housePick)}
       </div>
@@ -72,11 +72,12 @@ const Result = ({ userPick, resetUserPick, updateScore }: Props) => {
 export default Result;
 
 const ResultContainer = tw.div`
-  flex 
+  flex
+  md:flex-nowrap
+ 
   justify-between 
   mt-12 
-  w-5/12 
-  bg-center
-  bg-no-repeat
-  bg-auto
+  md:w-5/12
+  sm:w-5/12
+  w-11/12 
 `;
